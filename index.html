@@ -7,28 +7,30 @@
     <link rel="stylesheet" type="text/css" href="assets/style.css"/>
   </head>
 
-  <!-- Header at the with link to high scores page and showing time remaining-->
+  <!-- Header with link to high scores page and showing time remaining-->
 <body>
     <header>
         <ul>
-            <li><a id= highscores href="#">View Highscores</a></li>
-            <li>Time Remaining: </li>
+            <li><a id= "highscores" href="#">View Highscores</a></li>
+            <li><p id="timer"></p></li>
         </ul>
     </header>
 
+    <!-- Card that will change when quiz is started and with each question answered -->
     <main>
       <div class="card">
-        <div class="card-header">
-          <h2>Coding Bootcamp Quiz!</h2>
+        <div>
+          <h2 class="cardHeader">Coding Bootcamp Quiz!</h2>
         </div>
-        <div class="card-body">
-         <p>Can you answer these review questions from Georgia Tech's Coding Bootcamp?</p>
-         <p>Try to answer all questions in under 30 seconds and claim the high score!</p>
-         <p>You can click "View Highscores" to view all high scores.</p>
-        </div>
+        <section class="cardBody">
+          <p>Can you answer these review questions from Georgia Tech's Coding Bootcamp?</p>
+          <p>Try to answer all questions in under 30 seconds and claim the high score!</p>
+          <p>You can click "View Highscores" to view all high scores.</p>
+        </section>
         <div class="card-footer">
           <button id="begin" class="btn">Begin</button>
         </div>
+      </div>
     </main>
 
     
