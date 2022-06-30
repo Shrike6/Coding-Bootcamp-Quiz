@@ -8,6 +8,7 @@ header {
     font-size: 12;
 }    
 
+/* Sets Highscores and Time Remaining in top corners */
 ul {
     list-style-type: none;
     display: flex;
@@ -26,6 +27,7 @@ ul {
     margin-right: 10px;   
 }
 
+/* Styles card where all of the content appears */
 .card {
     background-color: hsl(0, 0%, 100%);
     border-radius: 5px;
@@ -36,4 +38,28 @@ ul {
     margin: 0 auto;
     max-width: 800px;
     padding: 30px 40px;
+}
+
+/* Styles Answer Button Container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.ansBtn {
+    padding: 10px;
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.cardFooter {
+    margin-top: 10px;
+}
+
+.hide {
+    display: none;
 }

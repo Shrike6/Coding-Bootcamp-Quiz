@@ -17,22 +17,31 @@
     </header>
 
     <!-- Card that will change when quiz is started and with each question answered -->
-    <main>
-      <div class="card">
-        <div>
-          <h2 class="cardHeader">Coding Bootcamp Quiz!</h2>
-        </div>
-        <section class="cardBody">
-          <p>Can you answer these review questions from Georgia Tech's Coding Bootcamp?</p>
-          <p>Try to answer all questions in under 30 seconds and claim the high score!</p>
-          <p>You can click "View Highscores" to view all high scores.</p>
-        </section>
-        <div class="card-footer">
-          <button id="begin" class="btn">Begin</button>
-        </div>
+  
+  <div class="card">
+    <div>
+      <h2 class="cardHeader">Coding Bootcamp Quiz!</h2>
+    </div>
+    <section class="cardBody">
+      <div class="cardText">
+        <p>Can you answer these review questions from Georgia Tech's Coding Bootcamp?</p>
+        <p>Try to answer all questions in under 30 seconds and claim the high score!</p>
+        <p>You can click "View Highscores" to view all high scores.</p>
       </div>
-    </main>
+      <div class="container">
+        <button class="ansBtn hide">Ans1</button>
+        <button class="ansBtn hide">Ans2</button>
+        <button class="ansBtn hide">Ans3</button>
+        <button class="ansBtn hide">Ans4</button>
+      </div>
+    </section>
+    <div class="cardFooter">
+      <button id="begin" class="btn">Begin</button>
+      <button id="next" class="btn hide">Next</button>
+    </div>
+  </div>
+
 
     
-    <script src="./assets/script.js"></script>
+  <script src="./assets/script.js"></script>
 </body>

@@ -22,16 +22,18 @@ function countDown () {setInterval (function () {
 },1000)
 }
 
-function question1 () {
-    btnBegin.style.display = 'none';
-    cardText.innerHTML = 'Question 1';
-    questions.innerHTML = 'Which of these is an array?'
-    var ans1 = document.createElement("button");
-    ans1.innerHTML = "['John', 'Alex', 'Cody', 'Blake']";
-    questions.append(ans1);
+// function question1 () {
+//     cardText.innerHTML = 'Question 1';
+//     questions.innerHTML = 'Which of these is an array?'
+//     var answers = document.createElement("ol");
+//     var ans1 = document.createElement("li");
+//     var ans2 = document.createElement("li");
+//     var ans3 = document.createElement("li");
+//     ans1.innerHTML = "['John', 'Alex', 'Cody', 'Blake']";
+//     questions.append(ans1);
 
 
-}
+// }
 
 document.getElementById("begin").addEventListener('click', function() {countDown(); question1();});
 
