@@ -42,6 +42,7 @@ function countDown () {setInterval (function () {
     timeLeft.innerHTML = `Time Remaining: ${timeSec}`;},1000)
 }
 
+//Adds a number value for each question 
 var currentQuestion = 0;
 function startQuiz () {
     currentQuestion++;
@@ -51,6 +52,7 @@ function startQuiz () {
 
 }
 
+// Adds text to the buttons by pulling from the questionObj
 function setQuestions() {
     var currentQ = questionsObj[currentQuestion];
     questionEl.textContent = currentQ.question;
@@ -61,6 +63,7 @@ function setQuestions() {
 
 }
 
+//Determines what happens when each 
 function checkAns (selectAnswer) {
     var correctAns = questionsObj[currentQuestion].correct;
     if (selectAnswer === correctAns) {
